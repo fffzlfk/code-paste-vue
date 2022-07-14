@@ -1,43 +1,41 @@
 <script setup lang="ts">
+import type { Paste } from '~/composables/types'
+
 const { id } = defineProps<{ id: string }>()
 
-const BASE_URL = 'http://localhost:8080/api'
+let paste = $ref({} as Paste)
 
-interface Paste {
-  id: string
-  expired_at: string
-  expired_days: number
-  type: string
-  data: string
-}
+const router = useRouter()
 
-let paste: Paste | null = $ref(null)
-
-function fetchCode(id: string) {
+function fetchPaste(id: string) {
   fetch(`${BASE_URL}/read/${id}`)
     .then(res => res.json())
     .then((res) => {
       paste = res
-      console.log(paste)
     })
     .catch((err) => {
       console.error(err)
+      router.push('/')
     })
 }
 
-const code = $computed(() => {
-  if (paste)
-    return paste.data
-
-  return ''
-})
-
 onMounted(() => {
-  fetchCode(id)
+  fetchPaste(id)
 })
 </script>
 
 <template>
-  {{ code }}
-  <CodeEditor :code="code" />
+  <div flex="~" flex-col items-center justify-center>
+    <div flex="~" flex-row items-center justify-center space-x-5 pb-5>
+      <span>Type:
+        <select disabled>
+          <option value="paste.type">{{ paste.type }}</option>
+        </select>
+      </span>
+      <span>ExpiredAt:
+        {{ UTC2Local(paste.expired_at) }}
+      </span>
+    </div>
+    <CodeEditor :paste="paste" />
+  </div>
 </template>

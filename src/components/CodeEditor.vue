@@ -1,23 +1,33 @@
 <script setup lang="ts">
-import Codemirror from 'codemirror-editor-vue3'
-const { code } = defineProps<{
-  code: string
-}>()
+import { Codemirror } from 'vue-codemirror'
 
-// import 'codemirror/mode/javascript/javascript.js'
-// import 'codemirror/theme/dracula.css'
+import { oneDark } from '@codemirror/theme-one-dark'
+import type { Paste } from '~/composables/types'
 
-const cmOptions = {
-  mode: 'text/javascript', // Language mode
-  theme: 'dracula', // Theme
-  lineNumbers: true, // Show line number
-  smartIndent: true, // Smart indent
-  indentUnit: 2, // The smart indent unit is 2 spaces in length
-  foldGutter: true, // Code folding
-  styleActiveLine: true, // Display the style of the selected row
+const { paste } = defineProps<{ paste: Paste }>()
+const emits = defineEmits(['setCode', 'setType', 'setExpiredDays'])
+
+function setCode(code: string) {
+  emits('setCode', code)
 }
+
+const languagesFunction = languages[paste.type as keyof typeof languages]
+const extensions = [oneDark]
+
+if (languagesFunction)
+  extensions.push(languagesFunction)
 </script>
 
 <template>
-  <Codemirror :value="code" :options="cmOptions" border placeholder="test placeholder" :height="200" />
+  <codemirror
+    :model-value="paste.data"
+    placeholder="Code goes here..."
+    :style="{ height: '400px', width: '900px', textAlign: 'left' }"
+    :autofocus="true"
+    :indent-with-tab="true"
+    :tab-size="2"
+    :extensions="extensions"
+    @change="setCode"
+  />
 </template>
+

@@ -2,6 +2,15 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.25.2
+  '@codemirror/lang-cpp': ^6.0.1
+  '@codemirror/lang-html': ^6.1.0
+  '@codemirror/lang-java': ^6.0.0
+  '@codemirror/lang-javascript': ^6.0.1
+  '@codemirror/lang-json': ^6.0.0
+  '@codemirror/lang-markdown': ^6.0.0
+  '@codemirror/lang-python': ^6.0.0
+  '@codemirror/lang-rust': ^6.0.0
+  '@codemirror/theme-one-dark': ^6.0.0
   '@iconify-json/carbon': ^1.1.6
   '@types/node': ^18.0.0
   '@unocss/reset': ^0.42.0
@@ -9,7 +18,6 @@ specifiers:
   '@vue/test-utils': ^2.0.1
   '@vueuse/core': ^8.7.5
   codemirror: ^6.0.1
-  codemirror-editor-vue3: ^2.1.7
   eslint: ^8.18.0
   jsdom: ^20.0.0
   pnpm: ^7.4.0
@@ -21,14 +29,24 @@ specifiers:
   vite-plugin-pages: ^0.25.0
   vitest: ^0.16.0
   vue: ^3.2.37
+  vue-codemirror: ^6.0.0
   vue-router: ^4.0.16
   vue-tsc: ^0.38.2
 
 dependencies:
+  '@codemirror/lang-cpp': registry.npmmirror.com/@codemirror/lang-cpp/6.0.1
+  '@codemirror/lang-html': registry.npmmirror.com/@codemirror/lang-html/6.1.0
+  '@codemirror/lang-java': registry.npmmirror.com/@codemirror/lang-java/6.0.0
+  '@codemirror/lang-javascript': registry.npmmirror.com/@codemirror/lang-javascript/6.0.1
+  '@codemirror/lang-json': registry.npmmirror.com/@codemirror/lang-json/6.0.0
+  '@codemirror/lang-markdown': registry.npmmirror.com/@codemirror/lang-markdown/6.0.0
+  '@codemirror/lang-python': registry.npmmirror.com/@codemirror/lang-python/6.0.0
+  '@codemirror/lang-rust': registry.npmmirror.com/@codemirror/lang-rust/6.0.0
+  '@codemirror/theme-one-dark': registry.npmmirror.com/@codemirror/theme-one-dark/6.0.0
   '@vueuse/core': 8.7.5_vue@3.2.37
   codemirror: registry.npmmirror.com/codemirror/6.0.1
-  codemirror-editor-vue3: registry.npmmirror.com/codemirror-editor-vue3/2.1.7
   vue: 3.2.37
+  vue-codemirror: registry.npmmirror.com/vue-codemirror/6.0.0_w3v55mexrpfzyztsvxxm2lvyqu
   vue-router: 4.0.16_vue@3.2.37
 
 devDependencies:
@@ -3881,6 +3899,103 @@ packages:
       '@lezer/common': registry.npmmirror.com/@lezer/common/1.0.0
     dev: false
 
+  registry.npmmirror.com/@codemirror/lang-cpp/6.0.1:
+    resolution: {integrity: sha512-46p3ohfhjzkLWJ3VwvzX0aqlXh8UkEqX1xo2Eds9l6Ql3uDoxI2IZEjR9cgJaGOZTXCkDzQuQH7sfYAxMvzLjA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-cpp/-/lang-cpp-6.0.1.tgz}
+    name: '@codemirror/lang-cpp'
+    version: 6.0.1
+    dependencies:
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@lezer/cpp': registry.npmmirror.com/@lezer/cpp/1.0.0
+    dev: false
+
+  registry.npmmirror.com/@codemirror/lang-css/6.0.0:
+    resolution: {integrity: sha512-jBqc+BTuwhNOTlrimFghLlSrN6iFuE44HULKWoR4qKYObhOIl9Lci1iYj6zMIte1XTQmZguNvjXMyr43LUKwSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-css/-/lang-css-6.0.0.tgz}
+    name: '@codemirror/lang-css'
+    version: 6.0.0
+    dependencies:
+      '@codemirror/autocomplete': registry.npmmirror.com/@codemirror/autocomplete/6.0.4
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@codemirror/state': registry.npmmirror.com/@codemirror/state/6.1.0
+      '@lezer/css': registry.npmmirror.com/@lezer/css/1.0.0
+    dev: false
+
+  registry.npmmirror.com/@codemirror/lang-html/6.1.0:
+    resolution: {integrity: sha512-gA7NmJxqvnhwza05CvR7W/39Ap9r/4Vs9uiC0IeFYo1hSlJzc/8N6Evviz6vTW1x8SpHcRYyqKOf6rpl6LfWtg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-html/-/lang-html-6.1.0.tgz}
+    name: '@codemirror/lang-html'
+    version: 6.1.0
+    dependencies:
+      '@codemirror/autocomplete': registry.npmmirror.com/@codemirror/autocomplete/6.0.4
+      '@codemirror/lang-css': registry.npmmirror.com/@codemirror/lang-css/6.0.0
+      '@codemirror/lang-javascript': registry.npmmirror.com/@codemirror/lang-javascript/6.0.1
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@codemirror/state': registry.npmmirror.com/@codemirror/state/6.1.0
+      '@lezer/common': registry.npmmirror.com/@lezer/common/1.0.0
+      '@lezer/html': registry.npmmirror.com/@lezer/html/1.0.0
+    dev: false
+
+  registry.npmmirror.com/@codemirror/lang-java/6.0.0:
+    resolution: {integrity: sha512-aeWq+ikUS6Eubk6RBbiMgxuBIT4Ih8Asb1qc2pSiMcstrwr4ODbazPXsBHbLBYg3aObvFyOm2bNQncbQJjZ3sQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-java/-/lang-java-6.0.0.tgz}
+    name: '@codemirror/lang-java'
+    version: 6.0.0
+    dependencies:
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@lezer/java': registry.npmmirror.com/@lezer/java/1.0.0
+    dev: false
+
+  registry.npmmirror.com/@codemirror/lang-javascript/6.0.1:
+    resolution: {integrity: sha512-kjGbBEosl+ozDU5ruDV48w4v3H6KECTFiDjqMLT0KhVwESPfv3wOvnDrTT0uaMOg3YRGnBWsyiIoKHl/tNWWDg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-javascript/-/lang-javascript-6.0.1.tgz}
+    name: '@codemirror/lang-javascript'
+    version: 6.0.1
+    dependencies:
+      '@codemirror/autocomplete': registry.npmmirror.com/@codemirror/autocomplete/6.0.4
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@codemirror/lint': registry.npmmirror.com/@codemirror/lint/6.0.0
+      '@codemirror/state': registry.npmmirror.com/@codemirror/state/6.1.0
+      '@codemirror/view': registry.npmmirror.com/@codemirror/view/6.0.3
+      '@lezer/common': registry.npmmirror.com/@lezer/common/1.0.0
+      '@lezer/javascript': registry.npmmirror.com/@lezer/javascript/1.0.1
+    dev: false
+
+  registry.npmmirror.com/@codemirror/lang-json/6.0.0:
+    resolution: {integrity: sha512-DvTcYTKLmg2viADXlTdufrT334M9jowe1qO02W28nvm+nejcvhM5vot5mE8/kPrxYw/HJHhwu1z2PyBpnMLCNQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-json/-/lang-json-6.0.0.tgz}
+    name: '@codemirror/lang-json'
+    version: 6.0.0
+    dependencies:
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@lezer/json': registry.npmmirror.com/@lezer/json/1.0.0
+    dev: false
+
+  registry.npmmirror.com/@codemirror/lang-markdown/6.0.0:
+    resolution: {integrity: sha512-ozJaO1W4WgGlwWOoYCSYzbVhhM0YM/4lAWLrNsBbmhh5Ztpl0qm4CgEQRl3t8/YcylTZYBIXiskui8sHNGd4dg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-markdown/-/lang-markdown-6.0.0.tgz}
+    name: '@codemirror/lang-markdown'
+    version: 6.0.0
+    dependencies:
+      '@codemirror/lang-html': registry.npmmirror.com/@codemirror/lang-html/6.1.0
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@codemirror/state': registry.npmmirror.com/@codemirror/state/6.1.0
+      '@codemirror/view': registry.npmmirror.com/@codemirror/view/6.0.3
+      '@lezer/common': registry.npmmirror.com/@lezer/common/1.0.0
+      '@lezer/markdown': registry.npmmirror.com/@lezer/markdown/1.0.1
+    dev: false
+
+  registry.npmmirror.com/@codemirror/lang-python/6.0.0:
+    resolution: {integrity: sha512-wI448yup4Y2Xxq/7r3Q4eEmth74ud263ABcexumEFEcoU+0c1k5XRKXp1aT5PrrVavlAKxWQMEvgi+x+HBU4zQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-python/-/lang-python-6.0.0.tgz}
+    name: '@codemirror/lang-python'
+    version: 6.0.0
+    dependencies:
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@lezer/python': registry.npmmirror.com/@lezer/python/1.0.0
+    dev: false
+
+  registry.npmmirror.com/@codemirror/lang-rust/6.0.0:
+    resolution: {integrity: sha512-VQql3Qk1BwoXb3SUkeWll/EEwhsgQWc1bpia7CFqqp2PhQBb5A6r4Vj2JCkU/nE6A7TDPSGHTOoqJSG5s/VXtQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/lang-rust/-/lang-rust-6.0.0.tgz}
+    name: '@codemirror/lang-rust'
+    version: 6.0.0
+    dependencies:
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@lezer/rust': registry.npmmirror.com/@lezer/rust/1.0.0
+    dev: false
+
   registry.npmmirror.com/@codemirror/language/6.2.0:
     resolution: {integrity: sha512-tabB0Ef/BflwoEmTB4a//WZ9P90UQyne9qWB9YFsmeS4bnEqSys7UpGk/da1URMXhyfuzWCwp+AQNMhvu8SfnA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/language/-/language-6.2.0.tgz}
     name: '@codemirror/language'
@@ -3920,6 +4035,17 @@ packages:
     version: 6.1.0
     dev: false
 
+  registry.npmmirror.com/@codemirror/theme-one-dark/6.0.0:
+    resolution: {integrity: sha512-jTCfi1I8QT++3m21Ui6sU8qwu3F/hLv161KLxfvkV1cYWSBwyUanmQFs89ChobQjBHi2x7s2k71wF9WYvE8fdw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/theme-one-dark/-/theme-one-dark-6.0.0.tgz}
+    name: '@codemirror/theme-one-dark'
+    version: 6.0.0
+    dependencies:
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@codemirror/state': registry.npmmirror.com/@codemirror/state/6.1.0
+      '@codemirror/view': registry.npmmirror.com/@codemirror/view/6.0.3
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+    dev: false
+
   registry.npmmirror.com/@codemirror/view/6.0.3:
     resolution: {integrity: sha512-1gDBymhbx2DZzwnR/rNUu1LiQqjxBJtFiB+4uLR6tHQ6vKhTIwUsP5uZUQ7SM7JxVx3UihMynnTqjcsC+mczZg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@codemirror/view/-/view-6.0.3.tgz}
     name: '@codemirror/view'
@@ -3936,12 +4062,66 @@ packages:
     version: 1.0.0
     dev: false
 
+  registry.npmmirror.com/@lezer/cpp/1.0.0:
+    resolution: {integrity: sha512-Klk3/AIEKoptmm6cNm7xTulNXjdTKkD+hVOEcz/NeRg8tIestP5hsGHJeFDR/XtyDTxsjoPjKZRIGohht7zbKw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/cpp/-/cpp-1.0.0.tgz}
+    name: '@lezer/cpp'
+    version: 1.0.0
+    dependencies:
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+      '@lezer/lr': registry.npmmirror.com/@lezer/lr/1.2.0
+    dev: false
+
+  registry.npmmirror.com/@lezer/css/1.0.0:
+    resolution: {integrity: sha512-616VqgDKumHmYIuxs3tnX1irEQmoDHgF/TlP4O5ICWwyHwLMErq+8iKVuzTkOdBqvYAVmObqThcDEAaaMJjAdg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/css/-/css-1.0.0.tgz}
+    name: '@lezer/css'
+    version: 1.0.0
+    dependencies:
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+      '@lezer/lr': registry.npmmirror.com/@lezer/lr/1.2.0
+    dev: false
+
   registry.npmmirror.com/@lezer/highlight/1.0.0:
     resolution: {integrity: sha512-nsCnNtim90UKsB5YxoX65v3GEIw3iCHw9RM2DtdgkiqAbKh9pCdvi8AWNwkYf10Lu6fxNhXPpkpHbW6mihhvJA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/highlight/-/highlight-1.0.0.tgz}
     name: '@lezer/highlight'
     version: 1.0.0
     dependencies:
       '@lezer/common': registry.npmmirror.com/@lezer/common/1.0.0
+    dev: false
+
+  registry.npmmirror.com/@lezer/html/1.0.0:
+    resolution: {integrity: sha512-wZHBcieArLTxEi198hqRBBHMySzDKo5suWaESdUw0t44IXp01vkSRwX2brG1qBbKdwJ+C6U0iMl00vWNiyAROg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/html/-/html-1.0.0.tgz}
+    name: '@lezer/html'
+    version: 1.0.0
+    dependencies:
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+      '@lezer/lr': registry.npmmirror.com/@lezer/lr/1.2.0
+    dev: false
+
+  registry.npmmirror.com/@lezer/java/1.0.0:
+    resolution: {integrity: sha512-z2EA0JHq2WoiKfQy5uOOd4t17PJtq8guh58gPkSzOnNcQ7DNbkrU+Axak+jL8+Noinwyz2tRNOseQFj+Tg+P0A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/java/-/java-1.0.0.tgz}
+    name: '@lezer/java'
+    version: 1.0.0
+    dependencies:
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+      '@lezer/lr': registry.npmmirror.com/@lezer/lr/1.2.0
+    dev: false
+
+  registry.npmmirror.com/@lezer/javascript/1.0.1:
+    resolution: {integrity: sha512-t7fpf3+gi/jiAtW+Gv734TbKdpPg6b8qATH01/jprW9H2oR++Tb688IHwJvZbk9F4GjpCEv86beuHMpUyC1b5g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/javascript/-/javascript-1.0.1.tgz}
+    name: '@lezer/javascript'
+    version: 1.0.1
+    dependencies:
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+      '@lezer/lr': registry.npmmirror.com/@lezer/lr/1.2.0
+    dev: false
+
+  registry.npmmirror.com/@lezer/json/1.0.0:
+    resolution: {integrity: sha512-zbAuUY09RBzCoCA3lJ1+ypKw5WSNvLqGMtasdW6HvVOqZoCpPr8eWrsGnOVWGKGn8Rh21FnrKRVlJXrGAVUqRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/json/-/json-1.0.0.tgz}
+    name: '@lezer/json'
+    version: 1.0.0
+    dependencies:
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+      '@lezer/lr': registry.npmmirror.com/@lezer/lr/1.2.0
     dev: false
 
   registry.npmmirror.com/@lezer/lr/1.2.0:
@@ -3952,19 +4132,31 @@ packages:
       '@lezer/common': registry.npmmirror.com/@lezer/common/1.0.0
     dev: false
 
-  registry.npmmirror.com/codemirror-editor-vue3/2.1.7:
-    resolution: {integrity: sha512-Pj4p9vacexMk6P1XEjxriHU/Xna4V/6+KzJbUE8lwxx0wbCrAopuCHSdJSKpsMWhYj/enkaNVFoIp1MAfvqTgw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/codemirror-editor-vue3/-/codemirror-editor-vue3-2.1.7.tgz}
-    name: codemirror-editor-vue3
-    version: 2.1.7
+  registry.npmmirror.com/@lezer/markdown/1.0.1:
+    resolution: {integrity: sha512-LlpNWLqes3XQvd8TwpJTHf9ENl4fI6H32xQkMgltUITFMMdQpOASXQtDawWR03yS6hskh4bkhATQbgjdGMoUvA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/markdown/-/markdown-1.0.1.tgz}
+    name: '@lezer/markdown'
+    version: 1.0.1
     dependencies:
-      codemirror: registry.npmmirror.com/codemirror/5.65.6
-      diff-match-patch: registry.npmmirror.com/diff-match-patch/1.0.5
+      '@lezer/common': registry.npmmirror.com/@lezer/common/1.0.0
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
     dev: false
 
-  registry.npmmirror.com/codemirror/5.65.6:
-    resolution: {integrity: sha512-zNihMSMoDxK9Gqv9oEyDT8oM51rcRrQ+IEo2zyS48gJByBq5Fj8XuNEguMra+MuIOuh6lkpnLUJeL70DoTt6yw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/codemirror/-/codemirror-5.65.6.tgz}
-    name: codemirror
-    version: 5.65.6
+  registry.npmmirror.com/@lezer/python/1.0.0:
+    resolution: {integrity: sha512-UQtDPmNhXxQZ7/Uoh8mR6sckrFzeyrjCkTIy7WQY8Sjdfi8wmr49iPbgsThy1Jy0DDBTnqZRULDngXNJ5AWVqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/python/-/python-1.0.0.tgz}
+    name: '@lezer/python'
+    version: 1.0.0
+    dependencies:
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+      '@lezer/lr': registry.npmmirror.com/@lezer/lr/1.2.0
+    dev: false
+
+  registry.npmmirror.com/@lezer/rust/1.0.0:
+    resolution: {integrity: sha512-IpGAxIjNxYmX9ra6GfQTSPegdCAWNeq23WNmrsMMQI7YNSvKtYxO4TX5rgZUmbhEucWn0KTBMeDEPXg99YKtTA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@lezer/rust/-/rust-1.0.0.tgz}
+    name: '@lezer/rust'
+    version: 1.0.0
+    dependencies:
+      '@lezer/highlight': registry.npmmirror.com/@lezer/highlight/1.0.0
+      '@lezer/lr': registry.npmmirror.com/@lezer/lr/1.2.0
     dev: false
 
   registry.npmmirror.com/codemirror/6.0.1:
@@ -3987,10 +4179,10 @@ packages:
     version: 1.0.5
     dev: false
 
-  registry.npmmirror.com/diff-match-patch/1.0.5:
-    resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/diff-match-patch/-/diff-match-patch-1.0.5.tgz}
-    name: diff-match-patch
-    version: 1.0.5
+  registry.npmmirror.com/csstype/2.6.17:
+    resolution: {integrity: sha512-u1wmTI1jJGzCJzWndZo8mk4wnPTZd1eOIYTYvuEyOQGfmDl3TrabCCfKnOC86FZwW/9djqTl933UF/cS425i9A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/csstype/-/csstype-2.6.17.tgz}
+    name: csstype
+    version: 2.6.17
     dev: false
 
   registry.npmmirror.com/esbuild-android-64/0.14.29:
@@ -4235,6 +4427,24 @@ packages:
     resolution: {integrity: sha512-OPhtyEjyyN9x3nhPsu76f52yUGXiZcgvsrFVtvTkyGRQJ0XK+GPc6ov1z+lRpbeabka+MYEQxOYRnt5nF30aMw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/style-mod/-/style-mod-4.0.0.tgz}
     name: style-mod
     version: 4.0.0
+    dev: false
+
+  registry.npmmirror.com/vue-codemirror/6.0.0_w3v55mexrpfzyztsvxxm2lvyqu:
+    resolution: {integrity: sha512-1zYlS1l6Buxq0/PCw4gn2YQfWbINE0arEjtS/bZV1HcNMsgzotWbKmvRh9F+Ie0POX1F47gQricR731j4B/Ftw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-codemirror/-/vue-codemirror-6.0.0.tgz}
+    id: registry.npmmirror.com/vue-codemirror/6.0.0
+    name: vue-codemirror
+    version: 6.0.0
+    peerDependencies:
+      codemirror: 6.x
+      vue: 3.x
+    dependencies:
+      '@codemirror/commands': registry.npmmirror.com/@codemirror/commands/6.0.1
+      '@codemirror/language': registry.npmmirror.com/@codemirror/language/6.2.0
+      '@codemirror/state': registry.npmmirror.com/@codemirror/state/6.1.0
+      '@codemirror/view': registry.npmmirror.com/@codemirror/view/6.0.3
+      codemirror: registry.npmmirror.com/codemirror/6.0.1
+      csstype: registry.npmmirror.com/csstype/2.6.17
+      vue: 3.2.37
     dev: false
 
   registry.npmmirror.com/w3c-keyname/2.2.4:

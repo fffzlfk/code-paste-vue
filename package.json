@@ -10,10 +10,19 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@codemirror/lang-cpp": "^6.0.1",
+    "@codemirror/lang-html": "^6.1.0",
+    "@codemirror/lang-java": "^6.0.0",
+    "@codemirror/lang-javascript": "^6.0.1",
+    "@codemirror/lang-json": "^6.0.0",
+    "@codemirror/lang-markdown": "^6.0.0",
+    "@codemirror/lang-python": "^6.0.0",
+    "@codemirror/lang-rust": "^6.0.0",
+    "@codemirror/theme-one-dark": "^6.0.0",
     "@vueuse/core": "^8.7.5",
     "codemirror": "^6.0.1",
-    "codemirror-editor-vue3": "^2.1.7",
     "vue": "^3.2.37",
+    "vue-codemirror": "^6.0.0",
     "vue-router": "^4.0.16"
   },
   "devDependencies": {

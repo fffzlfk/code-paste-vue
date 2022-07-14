@@ -8,9 +8,12 @@ declare global {
   const $ref: typeof import('vue/macros')['$ref']
   const $shallowRef: typeof import('vue/macros')['$shallowRef']
   const $toRef: typeof import('vue/macros')['$toRef']
+  const BASE_URL: typeof import('./src/composables/config')['BASE_URL']
   const EffectScope: typeof import('vue')['EffectScope']
+  const UTC2Local: typeof import('./src/composables/utils')['UTC2Local']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
+  const cmOptions: typeof import('./src/composables/config')['cmOptions']
   const computed: typeof import('vue')['computed']
   const computedAsync: typeof import('@vueuse/core')['computedAsync']
   const computedEager: typeof import('@vueuse/core')['computedEager']
@@ -33,7 +36,6 @@ declare global {
   const eagerComputed: typeof import('@vueuse/core')['eagerComputed']
   const effectScope: typeof import('vue')['effectScope']
   const extendRef: typeof import('@vueuse/core')['extendRef']
-  const fetchCode: typeof import('./src/composables/api')['fetchCode']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const h: typeof import('vue')['h']
@@ -45,6 +47,7 @@ declare global {
   const isReactive: typeof import('vue')['isReactive']
   const isReadonly: typeof import('vue')['isReadonly']
   const isRef: typeof import('vue')['isRef']
+  const languages: typeof import('./src/composables/languages')['languages']
   const logicAnd: typeof import('@vueuse/core')['logicAnd']
   const logicNot: typeof import('@vueuse/core')['logicNot']
   const logicOr: typeof import('@vueuse/core')['logicOr']
@@ -261,9 +264,12 @@ declare module '@vue/runtime-core' {
     readonly $ref: UnwrapRef<typeof import('vue/macros')['$ref']>
     readonly $shallowRef: UnwrapRef<typeof import('vue/macros')['$shallowRef']>
     readonly $toRef: UnwrapRef<typeof import('vue/macros')['$toRef']>
+    readonly BASE_URL: UnwrapRef<typeof import('./src/composables/config')['BASE_URL']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly UTC2Local: UnwrapRef<typeof import('./src/composables/utils')['UTC2Local']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
+    readonly cmOptions: UnwrapRef<typeof import('./src/composables/config')['cmOptions']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly computedAsync: UnwrapRef<typeof import('@vueuse/core')['computedAsync']>
     readonly computedEager: UnwrapRef<typeof import('@vueuse/core')['computedEager']>
@@ -286,7 +292,6 @@ declare module '@vue/runtime-core' {
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
-    readonly fetchCode: UnwrapRef<typeof import('./src/composables/api')['fetchCode']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
@@ -298,6 +303,7 @@ declare module '@vue/runtime-core' {
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
+    readonly languages: UnwrapRef<typeof import('./src/composables/languages')['languages']>
     readonly logicAnd: UnwrapRef<typeof import('@vueuse/core')['logicAnd']>
     readonly logicNot: UnwrapRef<typeof import('@vueuse/core')['logicNot']>
     readonly logicOr: UnwrapRef<typeof import('@vueuse/core')['logicOr']>
